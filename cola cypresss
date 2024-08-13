@@ -1,0 +1,22 @@
+https://www.youtube.com/watch?v=wJblsUDo1qg&list=PLnUo-Rbc3jjy314Ik21RJvYaCoPRHyG9O&index=18
+
+
+Inicializar um projeto Node
+npm init --yes
+
+Instalar o Cypress
+npm install -D cypress@12.5.0
+
+Abrir o Cypress
+npx cypress open
+
+
+Espero que exita um elemento  e deve ter  o txto Mesada Juceli
+cy.get("tbody tr td.description").should("have.text", "Mesada Juceli")
+
+
+hooks- executar antes ou depois de cada ou de todos os testes 
+
+npx cypress run- executar os testes sem abrir a interface
+
+npx cypress run --config viewportHeight=1000,viewportWidth=600 reduzir tamanho da tela
